@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#83B4DB"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/log_in"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:hint="@string/enter_user_name"
+        android:inputType="text"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/btLogIn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="#72DA76"
+        android:text="@string/bt_log_in"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="@string/you_don_t_have_account"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_marginStart="50dp" />
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/sign_up"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#89229B"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
